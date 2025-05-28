@@ -20,21 +20,20 @@ export default function Slider() {
   });
   const slides = [
     {
-      title: 'Lorem Ipsum 1',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+      title: 'Mudanças nacionais e internacionais',
+      text: 'Cuidamos da sua mudança com precisão, seja para outro bairro ou outro país. Planejamento, transporte seguro e equipe experiente garantem uma transição tranquila do início ao fim.',
       index: 0,
-
       bgImage: '/movingChange.jpg',
     },
     {
-      title: 'Lorem Ipsum 2',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+      title: 'Limpeza de ambientes e pós-eventos',
+      text: 'Ambientes limpos em tempo recorde. Atuamos com agilidade e discrição em limpezas residenciais, comerciais e pós-eventos, deixando tudo pronto para o próximo capítulo.',
       index: 1,
       bgImage: '/cleaning.jpg',
     },
     {
-      title: 'Lorem Ipsum 3',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+      title: 'Profissional Organizer',
+      text: 'Transformamos caos em ordem. Organizamos espaços pessoais e profissionais com métodos inteligentes, praticidade e estética — facilitando sua rotina com leveza.',
       index: 2,
       bgImage: '/organizer.jpg',
     },
@@ -60,13 +59,20 @@ export default function Slider() {
           <>
             <Arrow
               left
-              onClick={(e: any) => e.stopPropagation() || instanceRef.current?.prev()}
+              onClick={(e: any) =>
+                e.stopPropagation() || instanceRef.current?.prev()
+              }
               disabled={currentSlide === 0}
             />
 
             <Arrow
-              onClick={(e: any) => e.stopPropagation() || instanceRef.current?.next()}
-              disabled={currentSlide === instanceRef.current.track.details.slides.length - 1}
+              onClick={(e: any) =>
+                e.stopPropagation() || instanceRef.current?.next()
+              }
+              disabled={
+                currentSlide ===
+                instanceRef.current.track.details.slides.length - 1
+              }
             />
           </>
         )}
@@ -75,19 +81,27 @@ export default function Slider() {
   );
 }
 
-function Arrow(props: { disabled: boolean; left?: boolean; onClick: (e: any) => void }) {
+function Arrow(props: {
+  disabled: boolean;
+  left?: boolean;
+  onClick: (e: any) => void;
+}) {
   const disabled = props.disabled ? ' arrow--disabled' : '';
   return (
     <svg
       onClick={props.onClick}
-      className={`arrow ${props.left ? 'arrow--left' : 'arrow--right'} ${disabled}`}
+      className={`arrow ${
+        props.left ? 'arrow--left' : 'arrow--right'
+      } ${disabled}`}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
     >
       {props.left && (
         <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />
       )}
-      {!props.left && <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />}
+      {!props.left && (
+        <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
+      )}
     </svg>
   );
 }
