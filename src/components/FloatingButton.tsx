@@ -5,7 +5,7 @@ export default function FloatingButton() {
   return (
     <Link
       href="https://wa.me/351919393811"
-      className="fixed bottom-8 md:bottom-12 right-4 bg-green-500 text-white p-3 px-6 hover:bg-green-600 rounded-full shadow-xl hover:shadow-2xl z-50 md:flex items-center justify-center gap-4 hidden"
+      className="fixed bottom-8 md:bottom-12 right-4 bg-green-500 text-white p-3 px-6 hover:bg-green-600 rounded-full shadow-xl hover:shadow-2xl z-50 flex items-center justify-center gap-4 "
       target="_blank"
     >
       <Image

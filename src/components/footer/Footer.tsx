@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <>
       <footer className="bg-stone-900 text-center text-sm font-medium text-white mt-12 py-12 ">
-        <section className="container-1024 max-w-[80%] m-auto flex flex-col md:flex-row justify-between items-start gap-8">
+        <section className="md:container-1024 max-w-[80%] m-auto flex flex-col md:flex-row justify-between items-start gap-8 ">
           <article className="md:w-1/4 flex flex-wrap md:flex-col gap-2 text-start ">
             <h3 className="font-bold text-xl">Quem somos</h3>
             <p>
@@ -19,8 +19,8 @@ export default function Footer() {
               sit assumenda ratione!
             </p>
             <p>Endereço - Rua da Marrota, 350 - Landim, Famalicão</p>
-          </article>{' '}
-          <section className="md:w-1/3 md:flex md:justify-center">
+          </article>
+          {/* <section className="md:w-1/3 md:flex md:justify-center">
             <article className="flex flex-col  items-start md:-ml-8">
               {' '}
               <h3 className="font-bold text-xl">Contate-nos</h3>
@@ -33,40 +33,46 @@ export default function Footer() {
                     <span>Fale conosco!</span>
                   </Button>
                 </Link>
-                {/* <div className="w-8 h-8 bg-gray-100" />
-                <div className="w-8 h-8 bg-gray-100" />
-                <div className="w-8 h-8 bg-gray-100" />
-                <div className="w-8 h-8 bg-gray-100" /> */}
               </article>
-              {/* <p>WhatsApp: +351 914 122 413</p> */}
-              {/* <Button className="mt-4 bg-customBrown200 hover:bg-customBrown200/90">
-                <BsWhatsapp />
-                <span>Fale conosco!</span>
-              </Button> */}
             </article>
-            {/* <article className="md:w-1/4 flex flex-col gap-2 items-start md:items-center">
-            <h3 className="font-bold text-xl">Contacte-nos</h3>
-          </article> */}
-          </section>
-          <article className="md:w-1/4 flex flex-wrap md:flex-col gap-2 items-start">
+          </section> */}
+          <article className="md:w-1/4 flex flex-wrap md:flex-col gap-2 items-center">
             <h3 className="font-bold text-xl">Links úteis</h3>
             <article className="flex flex-wrap md:flex-col gap-4 md:gap-3">
-              <Link href="#" className="uppercase hover:text-brandYellow100">
+              <Link
+                href="#"
+                className="uppercase hover:text-brandYellow100 md:-ml-2"
+              >
                 lorem ipsum
               </Link>
-               <Link href="#" className="uppercase hover:text-brandYellow100">
+              <Link
+                href="#"
+                className="uppercase hover:text-brandYellow100 md:-ml-2"
+              >
                 lorem ipsum
               </Link>
-               <Link href="#" className="uppercase hover:text-brandYellow100">
+              <Link
+                href="#"
+                className="uppercase hover:text-brandYellow100 md:-ml-2"
+              >
                 lorem ipsum
               </Link>
-               <Link href="#" className="uppercase hover:text-brandYellow100">
+              <Link
+                href="#"
+                className="uppercase hover:text-brandYellow100 md:-ml-2"
+              >
                 lorem ipsum
               </Link>
-               <Link href="#" className="uppercase hover:text-brandYellow100">
+              <Link
+                href="#"
+                className="uppercase hover:text-brandYellow100 md:-ml-2"
+              >
                 lorem ipsum
               </Link>
-               <Link href="#" className="uppercase hover:text-brandYellow100">
+              <Link
+                href="#"
+                className="uppercase hover:text-brandYellow100 md:-ml-2"
+              >
                 lorem ipsum
               </Link>
             </article>
