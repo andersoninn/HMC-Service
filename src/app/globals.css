@@ -71,6 +71,10 @@ body {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 [class^='number-slide'],
 [class*=' number-slide'] {
   background: grey;
@@ -151,7 +155,11 @@ body {
   bottom: 0.1em;
   width: 100%;
   height: 0.5em;
-  background: linear-gradient(to top, #f7d139, #fef08a9d); /* amarelo tipo marca-texto */
+  background: linear-gradient(
+    to top,
+    #f7d139,
+    #fef08a9d
+  ); /* amarelo tipo marca-texto */
   z-index: -1;
   border-radius: 2px;
 }

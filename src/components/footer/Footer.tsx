@@ -1,173 +1,93 @@
+import { ArrowRightIcon, MobileIcon } from '@radix-ui/react-icons';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Button } from '../ui/button';
-import { BsCircleFill, BsWhatsapp } from 'react-icons/bs';
-import ContactButtons from '../contacts/ContactButtons';
 
 export default function Footer() {
   return (
-    <>
-      <footer className="bg-stone-900 text-center text-sm font-medium text-white mt-12 py-12 ">
-        <section className="md:container-1024 max-w-[80%] m-auto flex flex-col md:flex-row justify-between items-start gap-8 ">
-          <article className="md:w-1/4 flex flex-wrap md:flex-col gap-2 text-start ">
-            <h3 className="font-bold text-xl">Quem somos</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-              modi minus saepe, ducimus corrupti laboriosam alias, laudantium
-              neque similique vero quisquam beatae a deserunt dolores accusamus
-              libero sit assumenda ratione! deserunt dolores accusamus libero
-              sit assumenda ratione!
-            </p>
-            <p>Endereço - Rua da Marrota, 350 - Landim, Famalicão</p>
-          </article>
-          {/* <section className="md:w-1/3 md:flex md:justify-center">
-            <article className="flex flex-col  items-start md:-ml-8">
-              {' '}
-              <h3 className="font-bold text-xl">Contate-nos</h3>
-              <article className="flex gap-4 my-2 justify-center items-center">
-                <ContactButtons />
-                <BsCircleFill className="text-white w-2 h-2" />
-                <Link href="https://wa.me/351914122413" target="_blank">
-                  <Button variant="service">
-                    <BsWhatsapp />
-                    <span>Fale conosco!</span>
-                  </Button>
-                </Link>
-              </article>
-            </article>
-          </section> */}
-          <article className="md:w-1/4 flex flex-wrap md:flex-col gap-2 items-center">
-            <h3 className="font-bold text-xl">Links úteis</h3>
-            <article className="flex flex-wrap md:flex-col gap-4 md:gap-3">
-              <Link
-                href="#"
-                className="uppercase hover:text-brandYellow100 md:-ml-2"
-              >
-                lorem ipsum
-              </Link>
-              <Link
-                href="#"
-                className="uppercase hover:text-brandYellow100 md:-ml-2"
-              >
-                lorem ipsum
-              </Link>
-              <Link
-                href="#"
-                className="uppercase hover:text-brandYellow100 md:-ml-2"
-              >
-                lorem ipsum
-              </Link>
-              <Link
-                href="#"
-                className="uppercase hover:text-brandYellow100 md:-ml-2"
-              >
-                lorem ipsum
-              </Link>
-              <Link
-                href="#"
-                className="uppercase hover:text-brandYellow100 md:-ml-2"
-              >
-                lorem ipsum
-              </Link>
-              <Link
-                href="#"
-                className="uppercase hover:text-brandYellow100 md:-ml-2"
-              >
-                lorem ipsum
-              </Link>
-            </article>
-          </article>
-          <article className="md:w-1/4 flex flex-col items-start gap-2">
-            <h3 className="font-bold text-xl">Instagram</h3>
-            <div className="flex flex-wrap gap-4 md:max-w-[176px]">
-              {/* RETIRAR O  unoptimized QUANDO FOR COLOCAR AS IMAGENS REAIS */}
-              <Image
-                src="/footer/movingChange/movingChange1.jpg"
-                alt="Ícone 1"
-                width={48}
-                height={48}
-                className="w-12 h-12 object-cover"
-                unoptimized
-              />
-              <Image
-                src="/footer/movingChange/movingChange2.jpg"
-                alt="Ícone 2"
-                width={48}
-                height={48}
-                className="w-12 h-12 object-cover"
-                unoptimized
-              />
-              <Image
-                src="/footer/movingChange/movingChange3.jpg"
-                alt="Ícone 3"
-                width={48}
-                height={48}
-                className="w-12 h-12 object-cover"
-                unoptimized
-              />
-              <Image
-                src="/footer/cleaning/cleaning1.jpg"
-                alt="Ícone 4"
-                width={48}
-                height={48}
-                className="w-12 h-12 object-cover"
-                unoptimized
-              />
-              <Image
-                src="/footer/cleaning/cleaning2.jpg"
-                alt="Ícone 5"
-                width={48}
-                height={48}
-                className="w-12 h-12 object-cover"
-                unoptimized
-              />
-              <Image
-                src="/footer/cleaning/cleaning3.jpg"
-                alt="Ícone 6"
-                width={48}
-                height={48}
-                className="w-12 h-12 object-cover"
-                unoptimized
-              />
-              <Image
-                src="/footer/organizer/organizer1.jpg"
-                alt="Ícone 7"
-                width={48}
-                height={48}
-                className="w-12 h-12 object-cover"
-                unoptimized
-              />
-              <Image
-                src="/footer/organizer/organizer2.jpg"
-                alt="Ícone 8"
-                width={48}
-                height={48}
-                className="w-12 h-12 object-cover"
-                unoptimized
-              />
-              <Image
-                src="/footer/organizer/organizer3.jpg"
-                alt="Ícone 9"
-                width={48}
-                height={48}
-                className="w-12 h-12 object-cover"
-                unoptimized
-              />
-              <Image
-                src="/footer/organizer/organizer4.jpg"
-                alt="Ícone 10"
-                width={48}
-                height={48}
-                className="w-12 h-12 object-cover md:hidden"
-                unoptimized
-              />
-            </div>
-          </article>
-        </section>
-        <section className="mt-12">
-          &copy; 2025 Your Company. All rights reserved.
-        </section>
-      </footer>
-    </>
+    <section className=" mt-24 pt-20 bg-stone-900 text-white z-0" id="footer">
+      <section className="max-w-[1240px] w-[90%] m-auto flex flex-col md:flex-row gap-8 md:gap-12">
+        <article className="flex flex-col gap-4 md:w-1/3">
+          <Image src="/logo.png" alt="Logo" width={130} height={130} />
+          <p className="font-light text-gray-400">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
+            perspiciatis unde omnis iste natus error sit voluptatem accusantium
+            doloremque laudantium.
+          </p>
+        </article>
+
+        <article className="md:w-1/3 flex flex-col gap-2">
+          <h3 className="text-2xl font-semibold pb-4">
+            Informações e serviços
+          </h3>
+          <Link
+            href="#"
+            className="hover:text-gray-300 flex gap-2 items-center justify-start"
+          >
+            <ArrowRightIcon className="w-3 h-3 font-semibold" /> Mundaças
+            Nacionais
+          </Link>
+          <Link
+            href="#"
+            className="hover:text-gray-300 flex gap-2 items-center justify-start"
+          >
+            <ArrowRightIcon className="w-3 h-3 font-semibold" /> Mudanças
+            Internacionais
+          </Link>
+          <Link
+            href="#"
+            className="hover:text-gray-300 flex gap-2 items-center justify-start"
+          >
+            <ArrowRightIcon className="w-3 h-3 font-semibold" /> Embalamento
+          </Link>
+          <Link
+            href="#"
+            className="hover:text-gray-300 flex gap-2 items-center justify-start"
+          >
+            <ArrowRightIcon className="w-3 h-3 font-semibold" /> Armazenamento
+          </Link>
+          <Link
+            href="#"
+            className="hover:text-gray-300 flex gap-2 items-center justify-start"
+          >
+            <ArrowRightIcon className="w-3 h-3 font-semibold" /> Limpeza de
+            ambientes e pós eventos
+          </Link>
+          <Link
+            href="#"
+            className="hover:text-gray-300 flex gap-2 items-center justify-start"
+          >
+            <ArrowRightIcon className="w-3 h-3 font-semibold" /> Organizer
+          </Link>
+        </article>
+
+        <article className="md:w-1/3 flex flex-col gap-2">
+          <h3 className="text-2xl font-semibold pb-4">Contatos</h3>
+          <p className="flex gap-2 items-center justify-start text-sky-300 font-semibold">
+            <MobileIcon className="w-4 h-4" />
+            <span>+351 919 393 811</span>{' '}
+            <span className="text-gray-400 font-light">/cooperação e loja</span>
+          </p>
+          <p className="flex gap-2 items-center justify-start font-semibold">
+            <span>@</span>
+            hmcservices.lorem@gmail.com
+          </p>
+        </article>
+      </section>
+      <aside className="bg-bgMenu2 mt-20 py-6 font-light text-gray-400">
+        <article className="max-w-[1240px] w-[90%] m-auto flex flex-col items-center justify-center">
+          <p>© Copyright Todos os direitos reservados a HMC Service</p>
+          <h3>
+            Produzido por{' '}
+            <Link
+              href="https://www.andersoninn.dev/"
+              className="hover:text-gray-100"
+              target="_blank"
+            >
+              Anderson Carvalho.
+            </Link>
+          </h3>
+        </article>
+      </aside>
+    </section>
   );
 }
