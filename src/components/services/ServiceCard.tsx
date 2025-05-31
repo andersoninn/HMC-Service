@@ -29,9 +29,13 @@ export default function ServiceCard({
 
   return (
     <article
-      className={`z-30 flex flex-col justify-between p-8 py-10 shadow-lg md:w-full md:flex-1 text-center min-h-[380px] h-full transition-colors duration-200 max-w-[80%] ${
+      className={`z-30 flex flex-col justify-between p-8 py-10 shadow-lg md:w-full md:flex-1 text-center min-h-[380px] h-full transition-colors duration-200 max-w-[80%] animate__animated animate__fadeInUp ${
         offsetTop ? 'md:-mt-24' : '-mt-24'
-      } ${isSelected ? 'bg-stone-900 text-white' : 'bg-white hover:bg-stone-800 hover:text-white'}`}
+      } ${
+        isSelected
+          ? 'bg-stone-900 text-white'
+          : 'bg-white hover:bg-stone-800 hover:text-white'
+      }`}
     >
       <div className="flex flex-col gap-6 items-center flex-grow">
         <span className="p-0 -mb-4">{icon}</span>

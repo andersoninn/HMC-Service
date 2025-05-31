@@ -56,7 +56,12 @@ export default function Slider() {
   return (
     <>
       <div className="navigation-wrapper z-10">
-        <div ref={sliderRef} className="keen-slider h-[80vh]">
+        <div
+          ref={sliderRef}
+          className={`keen-slider h-[80vh] transition-opacity duration-500 ${
+            loaded ? 'opacity-100' : 'opacity-0'
+          }`}
+        >
           {slides.map((slide, i) => (
             <Slide
               key={i}

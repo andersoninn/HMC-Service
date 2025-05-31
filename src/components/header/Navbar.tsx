@@ -12,8 +12,8 @@ export default function NavbarUI() {
   const menuItens = [
     { name: 'Home', link: '#home' },
     { name: 'Serviços', link: '#services' },
-    { name: 'Impressões 3D', link: '#3d' },
     { name: 'Orçamentos', link: '#clients' },
+    { name: 'Depoimentos', link: '#testemonials' },
     { name: 'Contatos', link: '#footer' },
   ];
 

@@ -16,8 +16,10 @@ export default function Slide({
         }}
         key={index}
       >
-        <section className="container max-w-[1000px] px-6 h-full lg:h-[500px]  m-auto flex flex-col items-center justify-center gap-6">
-          <h1 className="text-4xl lg:text-6xl font-bold text-center ">{title}</h1>
+        <section className="container max-w-[1000px] px-6 h-full lg:h-[500px]  m-auto flex flex-col items-center justify-center gap-6 animate__animated animate__fadeIn ">
+          <h1 className="text-4xl lg:text-6xl font-bold text-center ">
+            {title}
+          </h1>
           <article className="!text-center text-brand-text-primary">
             <p className="text-medium">{text}</p>
           </article>

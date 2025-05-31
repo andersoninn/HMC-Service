@@ -81,7 +81,7 @@ const ServiceDescription = forwardRef<HTMLElement, {}>(
 
             <p className="mb-4 md:max-w-[440px]">{service.description}</p>
             <Button asChild className="uppercase w-64" variant="dark">
-              <a href={service.link}>Saiba mais</a>
+              <a href={service.link}>Orçamento</a>
             </Button>
           </article>
 
