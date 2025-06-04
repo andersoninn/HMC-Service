@@ -13,30 +13,35 @@ export default function ServicesContainer() {
       <section className="container-1024 m-auto flex flex-col md:flex-row justify-between items-center md:items-stretch gap-8">
         <ServiceCard
           icon={<IoImageSharp className="w-24 h-24" />}
-          title="Mudanças lorem"
-          description="Serviço completo de mudanças residenciais e comerciais com agilidade, segurança e equipe especializada."
+          title="Mudanças Nacionais e Internacionais"
+          description="Realizamos mudanças nacionais e internacionais com total segurança, agilidade, eficiência e equipe especializada."
           actionText="Ver detalhes"
           offsetTop={false}
           serviceKey="movingChange"
-          scrollTargetRef={descriptionRef} // ✅ aqui
+          scrollTargetRef={descriptionRef}
         />
         <ServiceCard
           icon={<IoImageSharp className="w-24 h-24" />}
-          title="Limpeza"
-          description="Oferecemos serviços de limpeza geral, pós-obra e higienização completa, com equipe treinada e resultado impecável."
+          title={
+            <>
+              Limpeza Profissional
+              <br />e Organizer
+            </>
+          }
+          description="Cuidamos da limpeza e organização com agilidade e atenção aos detalhes para transformar seu espaço"
           actionText="Ver detalhes"
           offsetTop
           serviceKey="cleaning"
-          scrollTargetRef={descriptionRef} // ✅ aqui
+          scrollTargetRef={descriptionRef}
         />
         <ServiceCard
           icon={<IoImageSharp className="w-24 h-24" />}
-          title="Organizer"
-          description="Organização de ambientes residenciais e comerciais com técnicas modernas e personalizadas."
+          title="Armazenamento e Embalamento"
+          description="Cuidamos do armazenamento e/ou embalamento com segurança, praticidade e atenção a cada detalhe."
           actionText="Ver detalhes"
           offsetTop
-          serviceKey="organizer"
-          scrollTargetRef={descriptionRef} // ✅ aqui
+          serviceKey="storageAndPackaging"
+          scrollTargetRef={descriptionRef}
         />
       </section>
       <ServiceDescription ref={descriptionRef} />

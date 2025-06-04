@@ -12,20 +12,24 @@ export default function NavbarUI() {
   const menuItens = [
     { name: 'Home', link: '#home' },
     { name: 'Serviços', link: '#services' },
-    { name: 'Orçamentos', link: '#clients' },
+    { name: 'Orçamentos', link: '#services' },
     { name: 'Depoimentos', link: '#testemonials' },
     { name: 'Contatos', link: '#footer' },
   ];
 
   return (
     <header
-      className={`text-white font-montserrat pt-[45px] transition-[background-color] duration-1000 ease-in-out ${
+      className={`text-white font-montserrat pt-[25px] transition-[background-color] duration-1000 ease-in-out ${
         menuOpen ? 'bg-stone-900 md:bg-transparent' : 'bg-stone-900/00'
       }`}
     >
-      <section className="max-w-[1240px] md:w-[90%] mx-auto flex justify-between items-center px-4 py-4 md:px-0 h-[64px]">
+      <section className="max-w-[1240px] md:w-[90%] mx-auto flex justify-between items-center px-4 py-4  md:px-0 h-[64px]">
         <article className="flex gap-2 items-center justify-center">
-          <Image src="/logo.png" alt="Logo" width={130} height={130} />
+          <Image src="/logo.png" alt="Logo" width={80} height={180} />
+          <article className="flex flex-col items-start mt-2 -ml-2">
+            <span className="text-white font-bold text-2xl">HMC</span>
+            <span className="font-bold -mt-1 text-sm">TRANSPORTES</span>
+          </article>
         </article>
 
         {/* Menu desktop */}

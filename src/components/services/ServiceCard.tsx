@@ -6,11 +6,11 @@ import { useServiceStore } from './useServiceStore';
 
 interface ServiceCardProps {
   icon: ReactNode;
-  title: string;
+  title: ReactNode;
   description: string;
   actionText: string;
   offsetTop?: boolean;
-  serviceKey: 'movingChange' | 'cleaning' | 'organizer';
+  serviceKey: 'movingChange' | 'cleaning' | 'storageAndPackaging';
   scrollTargetRef?: RefObject<HTMLElement | null>;
 }
 
@@ -39,7 +39,7 @@ export default function ServiceCard({
     >
       <div className="flex flex-col gap-6 items-center flex-grow">
         <span className="p-0 -mb-4">{icon}</span>
-        <h1 className="text-2xl font-semibold">{title}</h1>
+        <h1 className="text-2xl font-semibold whitespace-pre-line">{title}</h1>
         <p className="-mt-2">{description}</p>
       </div>
 

@@ -6,6 +6,7 @@ import { Button } from '../ui/button';
 import { useServiceStore } from './useServiceStore';
 import { highlightServiceTitle } from '@/utils/highlightServiceTitle';
 import React from 'react';
+import Link from 'next/link';
 
 type ServiceInfo = {
   title: string;
@@ -28,43 +29,47 @@ const ServiceDescription = forwardRef<HTMLElement, {}>(
     const serviceDetails: Record<string, ServiceInfo> = {
       movingChange: {
         title:
-          'Especialistas em mudanças desafiadoras. Você relaxa, a gente resolve.',
+          'Mudanças nacionais e internacionais, grandes ou pequenas. Você relaxa, a gente resolve.',
         description:
-          'Cuidamos de cada detalhe da sua mudança, do planejamento à execução. Com equipe experiente, transporte seguro e agilidade, sua única preocupação será escolher o novo lugar favorito da casa.',
+          'Fazemos mudanças de qualquer porte, para qualquer destino. Do planejamento ao transporte, nossa equipe cuida de tudo com agilidade, segurança e atenção aos detalhes — seja uma caixa ou uma casa inteira.',
+
         link: '/servicos/mudanca',
       },
       cleaning: {
-        title: 'Limpeza feita por quem entende. Rápido, discreto e confiável.',
-        description:
-          'Do dia a dia ao pós-mudança, entregamos ambientes impecáveis com agilidade e discrição. Nossa equipe é treinada para limpar com eficiência, respeitando seu tempo, sua rotina e seu espaço',
+        title:
+          'Limpeza profissional e organização inteligente. Cada coisa no seu lugar — e sua rotina no controle.',
+        description: `
+          • Limpezas completas em casas, escritórios, eventos e muito mais — com agilidade, discrição e equipe treinada.  
+          • Organização personalizada com nossa profissional expert, que não só arruma, mas ensina como manter tudo no lugar.  
+
+          Do brilho à funcionalidade, transformamos espaços e ajudamos você a manter a ordem todos os dias.`,
         link: '/servicos/limpeza',
       },
-      organizer: {
+      storageAndPackaging: {
         title:
-          'Organização profissional para quem valoriza tempo, espaço e bem-estar.',
+          'Embalamento e armazenamento com método. Para sua casa, sua empresa ou o mundo.',
         description:
-          'Organizamos sua casa ou espaço de trabalho com método e sensibilidade. Cada objeto no lugar certo, de forma funcional e personalizada — para que você ganhe tempo, clareza e tranquilidade no dia a dia.',
+          'Embalamos com segurança para mudanças, envios internacionais ou armazenamento local. Também disponibilizamos espaços organizados e prontos para guardar o que importa, com praticidade, discrição e todo o cuidado que seus bens merecem.',
         link: '/servicos/organizacao',
       },
     };
 
     const highlightMap: Record<string, string[]> = {
-      movingChange: [
-        'Especialistas',
-        'em',
-        'mudanças',
-        'a',
-        'gente',
-        'resolve',
-      ],
-      cleaning: ['Limpeza', 'Rápido', 'discreto', 'confiável'],
-      organizer: [
-        'Organização',
+      movingChange: ['Mudanças', 'grandes', 'pequenas', 'relaxa', 'resolve'],
+      cleaning: [
+        'Limpeza',
+        'organização',
         'profissional',
-        'valoriza',
-        'tempo',
-        'espaço',
-        'bem-estar',
+        'inteligente',
+        'controle',
+      ],
+      storageAndPackaging: [
+        'Embalamento',
+        'armazenamento',
+        'método',
+        'casa',
+        'empresa',
+        'mundo',
       ],
     };
 
@@ -79,9 +84,15 @@ const ServiceDescription = forwardRef<HTMLElement, {}>(
               {highlightServiceTitle(service.title, highlights)}
             </h2>
 
-            <p className="mb-4 md:max-w-[440px]">{service.description}</p>
+            <p className="mb-4 md:max-w-[440px] whitespace-pre-line">
+              {service.description}
+            </p>
+
             <Button asChild className="uppercase w-64" variant="dark">
-              <a href={service.link}>Orçamento</a>
+              {/* <a href={service.link}>Orçamento</a> */}
+              <Link href="https://wa.me/351919393811" target="_blank">
+                Orçamento
+              </Link>
             </Button>
           </article>
 

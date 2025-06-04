@@ -106,7 +106,7 @@ function Arrow(props: {
   return (
     <svg
       onClick={props.onClick}
-      className={`arrow ${
+      className={`hidden md:block arrow ${
         props.left ? 'arrow--left' : 'arrow--right'
       } ${disabled} w-2 h-2 md:w-8 md:h-8 cursor-pointer`}
       xmlns="http://www.w3.org/2000/svg"
