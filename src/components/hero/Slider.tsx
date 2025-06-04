@@ -49,7 +49,7 @@ export default function Slider() {
       title: 'Armazenamento e embalamento',
       text: 'Soluções práticas para guardar ou embalar seus bens com segurança. Ideal para mudanças, viagens ou reformas. Tudo protegido com carinho e eficiência.',
       index: 2,
-      bgImage: '/storage.jpg',
+      bgImage: '/storageAndPackaging.jpg',
     },
   ];
 
