@@ -7,7 +7,7 @@ export default function Footer() {
     <section className=" pt-20 bg-stone-900 text-white z-0" id="footer">
       <section className="max-w-[1240px] w-[90%] m-auto flex flex-col md:flex-row gap-8 md:gap-12">
         <section className="flex flex-col gap-4 md:w-1/3">
-          <article className='flex gap-2 items-center justify-start'>
+          <article className="flex gap-2 items-center justify-start">
             <Image src="/logo.png" alt="Logo" width={100} height={100} />{' '}
             <article className="flex flex-col items-start mt-4 -ml-2">
               <span className="text-white font-bold text-3xl">HMC</span>
@@ -31,7 +31,7 @@ export default function Footer() {
             href="#"
             className="hover:text-gray-300 flex gap-2 items-center justify-start"
           >
-            <ArrowRightIcon className="w-3 h-3 font-semibold" /> Mundaças
+            <ArrowRightIcon className="w-3 h-3 font-semibold" /> Mudanças
             Nacionais
           </Link>
           <Link
@@ -57,14 +57,15 @@ export default function Footer() {
             href="#"
             className="hover:text-gray-300 flex gap-2 items-center justify-start"
           >
-            <ArrowRightIcon className="w-3 h-3 font-semibold" /> Limpeza de
-            ambientes e pós eventos
+            <ArrowRightIcon className="w-3 h-3 font-semibold" /> Limpeza
+            profissional
           </Link>
           <Link
             href="#"
             className="hover:text-gray-300 flex gap-2 items-center justify-start"
           >
-            <ArrowRightIcon className="w-3 h-3 font-semibold" /> Organizer
+            <ArrowRightIcon className="w-3 h-3 font-semibold" /> Profissional
+            Organizer
           </Link>
         </section>
 
@@ -83,7 +84,7 @@ export default function Footer() {
       </section>
       <aside className="bg-bgMenu2 mt-20 py-6 font-light text-gray-400">
         <article className="max-w-[1240px] w-[90%] m-auto flex flex-col items-center justify-center text-center">
-          <p>© Copyright Todos os direitos reservados a HMC Service</p>
+          <p>© Copyright Todos os direitos reservados a HMC Transportes</p>
           <h3>
             Produzido por{' '}
             <Link

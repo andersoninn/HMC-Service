@@ -35,21 +35,21 @@ export default function Slider() {
   const slides = [
     {
       title: 'Mudanças nacionais e internacionais',
-      text: 'Cuidamos da sua mudança com precisão, seja para outro bairro ou outro país. Planejamento, transporte seguro e equipe experiente garantem uma transição tranquila do início ao fim.',
+      text: 'Realizamos mudanças com total segurança, eficiência e agilidade — seja para outro bairro ou outro país. Conte com equipe especializada e transporte cuidadoso em cada detalhe.',
       index: 0,
       bgImage: '/movingChange.jpg',
     },
     {
-      title: 'Limpeza de ambientes e pós-eventos',
-      text: 'Ambientes limpos em tempo recorde. Atuamos com agilidade e discrição em limpezas residenciais, comerciais e pós-eventos, deixando tudo pronto para o próximo capítulo.',
+      title: 'Limpeza profissional e organização inteligente',
+      text: 'Transformamos seu espaço com limpeza ágil e organização inteligente. Cuidamos de tudo com atenção aos detalhes — do pós-evento ao dia a dia.',
       index: 1,
       bgImage: '/cleaning.jpg',
     },
     {
-      title: 'Profissional Organizer',
-      text: 'Transformamos caos em ordem. Organizamos espaços pessoais e profissionais com métodos inteligentes, praticidade e estética — facilitando sua rotina com leveza.',
+      title: 'Armazenamento e embalamento',
+      text: 'Soluções práticas para guardar ou embalar seus bens com segurança. Ideal para mudanças, viagens ou reformas. Tudo protegido com carinho e eficiência.',
       index: 2,
-      bgImage: '/organizer.jpg',
+      bgImage: '/storage.jpg',
     },
   ];
 
