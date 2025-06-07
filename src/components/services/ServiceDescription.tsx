@@ -29,7 +29,7 @@ const ServiceDescription = forwardRef<HTMLElement, {}>(
     const serviceDetails: Record<string, ServiceInfo> = {
       movingChange: {
         title:
-          'Mudanças nacionais e internacionais, grandes ou pequenas. Você relaxa, a gente resolve.',
+          'Mudanças nacionais e internacionais, grandes ou pequenas. Você descansa, a gente resolve.',
         description:
           'Fazemos mudanças de qualquer porte, para qualquer destino. Do planejamento ao transporte, nossa equipe cuida de tudo com agilidade, segurança e atenção aos detalhes — seja uma caixa ou uma casa inteira.',
 

@@ -27,7 +27,7 @@ export default function Slider() {
       if (instanceRef.current) {
         instanceRef.current.next();
       }
-    }, 3000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [instanceRef]);
@@ -35,7 +35,7 @@ export default function Slider() {
   const slides = [
     {
       title: 'Mudanças nacionais e internacionais',
-      text: 'Realizamos mudanças com total segurança, eficiência e agilidade — seja para outro bairro ou outro país. Conte com equipe especializada e transporte cuidadoso em cada detalhe.',
+      text: 'Realizamos mudanças com total segurança, eficiência e rapidez — tanto em território nacional como internacional. Conte com uma equipa especializada e transporte cuidado em cada detalhe.',
       index: 0,
       bgImage: '/movingChange.jpg',
     },
